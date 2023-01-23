@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+li {
+    list-style: none;
+}
+
+.contener {
+    margin: 20px;
+}
+
+.title {
+    background-color: aquamarine;
+}
+
+.body {
+    width: 300px;
+    height: 100px;
+}
+
+.button-group {
+    display: flex;
+}
+
+.button-group>*:not(:last-child) {
+    margin-right: 10px;
+}

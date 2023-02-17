@@ -15,6 +15,7 @@ li {
 
 .title {
     background-color: aquamarine;
+    /* display: none; */
 }
 
 .body {
@@ -32,4 +33,92 @@ li {
 
 .error {
     color: red;
+}
+
+#hover-test {
+    background-color: darkseagreen;
+}
+
+#hover-title {
+    margin: 0;
+}
+
+#hover-body {
+    display: none;
+    margin: 0;
+}
+
+.article-modal-wapper {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+}
+
+
+.fa-times {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: rgba(128, 128, 128, 0.46);
+    cursor: pointer;
+}
+
+
+
+
+.modal-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9500;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.article-modal.is-show {
+    display: block;
+}
+
+.modal {
+    display: none;
+    /* position: fixed; */
+    margin: 0 auto;
+    top: 50%;
+    /* left: 50%; */
+    width: 600px;
+    z-index: 9800;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+.article-modal {
+    display: none;
+    margin: 0 auto;
+
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    background-color: #e6ecf0;
+    padding: 20px 40px;
+    border-radius: 10px;
+    width: 600px;
+    height: auto;
+    z-index: 9800;
+
+    /* text-align: center; */
+    /* transform: translate(-50%, -50%); */
+
+
+}
+
+.modal-bg.is-show {
+    display: block;
 }
